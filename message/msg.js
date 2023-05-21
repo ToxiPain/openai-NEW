@@ -57,12 +57,12 @@ module.exports = async (conn, msg, m, openai) => {
     const groupAdmins = msg.isGroup ? await getGroupAdmins(participants) : ''
     const isAdmin = msg.isGroup ? groupAdmins.includes(sender) : false
     const isBotAdmin = msg.isGroup ? groupAdmins.includes(botNumber) : false
-    const restrictTOF = global.db.data.settings[conn.user.id].restrict
-    let senderJid;
-    if (msg.isGroup) {
-    senderJid = msg.key.participant;
-    } else {
-    senderJid = msg.sender;}
+    //const restrictTOF = global.db.data.settings[conn.user.id].restrict
+    //let senderJid;
+    //if (msg.isGroup) {
+    //senderJid = msg.key.participant;
+    //} else {
+    //senderJid = msg.sender;}
     
 /* Baneo de chats */
 
